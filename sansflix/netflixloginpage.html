@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sansflix - Giriş</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="website icon" type="png" href="s-icon.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        header {
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .profiles-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .profile {
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .profile img {
+            border-radius: 8px;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .profile:hover img {
+            border-color: #e50914;
+            transform: scale(1.1);
+        }
+
+        .profile span {
+            display: block;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile:hover span {
+            text-shadow: 0 0 10px rgba(229, 9, 20, 0.7);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #e50914;
+            text-decoration: none;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+
+
+    <header>
+        <img src="sansflix2.png" alt="logo">
+    </header>
+    <h1>Kim İzliyor?</h1>
+    <div class="profiles-container">
+        <a href="netflixhomepage.html">
+            <div class="profile" onclick="alert('Giriş Yapılıyor...')">
+                <img src="susun.jpeg" alt="User 1">
+                <span>özgür</span>
+            </div>
+        </a>
+        <a href="netflixhomepage.html">
+            <div class="profile" onclick="alert('Giriş Yapılıyor...')">
+                <img src="aglama.jpeg" alt="User 2">
+                <span>gürbüz</span>
+            </div>
+        </a>
+        <a href="netflixhomepage.html">
+            <div class="profile" onclick="alert('Giriş Yapılıyor...')">
+                <img src="sasirma.jpeg" alt="User 3">
+                <span>alper</span>
+            </div>
+        </a>
+        <a href="netflixhomepage.html">
+            <div class="profile" onclick="alert('Giriş Yapılıyor...')">
+                <img src="utangac.jpeg" alt="User 4">
+                <span>ensar</span>
+            </div>
+        </a>
+    </div>
+    <footer>
+        <a href="https://help.netflix.com/tr">Destek</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

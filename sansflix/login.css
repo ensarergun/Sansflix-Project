@@ -1,0 +1,43 @@
+.profile {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.profile img {
+    border-radius: 8px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.profile:hover img {
+    border-color: #e50914;
+    transform: scale(1.1);
+}
+
+.profile span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.profile:hover span {
+    text-shadow: 0 0 15px red, 0 0 20px red, 0 0 30px red; /* Kırmızı ışık efekti */
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #e50914;
+    text-decoration: none;
+}
